@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="style_some_id">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:gravity">center_horizontal|center_vertical</item>
+        <item name="android:layout_width">24dp</item>
+        <item name="android:layout_height">24dp</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentTop">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="alpha">0.9</item>
+    </style>
+    <style name="text_style_some_id">
+
+    </style>
+    <style name="title_movie_details">
+        <item name="android:textSize">40sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:textColor">#ECECEC</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">6</item>
+        <item name="android:shadowRadius">12</item>
+    </style>
+    <style name="age_limit_movie_details">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="genre_movie_details">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FF3466</item>
+    </style>
+    <style name="myRatingBar_movie" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/castoom_rb2</item>
+        <item name="android:maxHeight">8dip</item>
+        <item name="android:maxWidth">8dip</item>
+    </style>
+    <style name="myRatingBar" parent="Widget.AppCompat.RatingBar">
+        <item name="minHeight">14dip</item>
+        <item name="maxHeight">14dip</item>
+        <item name="android:progressDrawable">@drawable/caston_rb</item>
+    </style>
+    <style name="reviews">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#6D6D80</item>
+    </style>
+    <style name="storyLine">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#ECECEC</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">6</item>
+        <item name="android:shadowRadius">12</item>
+    </style>
+    <style name="story">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="cast">
+        <item name="android:textSize">14sp</item>
+        <item name="android:letterSpacing">-0.01</item>
+        <item name="android:shadowColor">#80000000</item>
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">6</item>
+        <item name="android:shadowRadius">12</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="name">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#D8D8D8</item>
+    </style>
+    <style name="back">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="warszawa_po">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="film_duration">
+        <item name="android:textSize">8sp</item>
+        <item name="android:textColor">#9A9A9A</item>
+    </style>
+
+</resources>
