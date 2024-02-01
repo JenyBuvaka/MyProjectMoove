@@ -6,23 +6,19 @@ import android.content.res.Configuration
 import android.content.res.Configuration.*
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TextView
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
-
     private var spanCount: Int = 2
     private lateinit var recyclerView: RecyclerView
-    private lateinit var adapter: AdapterMainActivity
+    private lateinit var adapter: MovieAdapter
     private lateinit var intent: Intent
 
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-
-        intent = Intent(this@MainActivity, MovieDetailsActivity::class.java)
 
         setSpanCount()
 
@@ -54,8 +50,9 @@ class MainActivity : AppCompatActivity() {
                 filmDuration = getString(R.string.film_duration)
             )
         )
-        adapter = AdapterMainActivity(object : OnMovieClickListener {
+        adapter = MovieAdapter(object : OnMovieClickListener {
             override fun setOnClick(position: Int) {
+                intent = Intent(this@MainActivity, MovieDetailsActivity::class.java)
                 startActivity(intent)
             }
         })

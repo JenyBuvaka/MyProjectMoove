@@ -15,8 +15,6 @@
         android:src="@drawable/robert_downey"
         app:layout_constraintHorizontal_weight="1"
         android:adjustViewBounds="true"
-
-
         app:layout_constraintEnd_toStartOf="@+id/image_chris_evans"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -31,9 +29,6 @@
         android:src="@drawable/chris_evans"
         app:layout_constraintHorizontal_weight="1"
         android:adjustViewBounds="true"
-
-
-
         app:layout_constraintEnd_toStartOf="@+id/image_mark_ruffalo"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/image_robert"
@@ -48,8 +43,6 @@
         android:src="@drawable/mark_ruffalo"
         app:layout_constraintHorizontal_weight="1"
         android:adjustViewBounds="true"
-
-
         app:layout_constraintEnd_toStartOf="@+id/image_chris_hemsw"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/image_chris_evans"
@@ -64,8 +57,6 @@
         android:src="@drawable/chris_hemsworth"
         app:layout_constraintHorizontal_weight="1"
         android:adjustViewBounds="true"
-
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/image_mark_ruffalo"
@@ -77,10 +68,8 @@
         android:layout_width="6dp"
         android:layout_height="16dp"
         android:layout_marginStart="18dp"
-
         android:layout_marginTop="59dp"
         android:background="@drawable/back"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -90,12 +79,8 @@
         style="@style/myRatingBar"
         android:layout_width="wrap_content"
         android:layout_height="12dp"
-
         android:layout_marginTop="8dp"
         android:foregroundGravity="center_vertical"
-
-
-
         android:rating="4.4"
         android:stepSize="0.1"
         app:layout_constraintStart_toStartOf="@id/genre"
@@ -150,7 +135,6 @@
         android:layout_marginTop="4dp"
         android:gravity="center_vertical"
         android:lineSpacingExtra="4sp"
-
         android:text="@string/rewiews"
         android:textAllCaps="true"
         android:textAppearance="@style/reviews"
@@ -166,10 +150,8 @@
         android:lineSpacingExtra="4sp"
         android:text="@string/storyLine"
         android:textAppearance="@style/storyLine"
-
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="@id/ratingBar"
-
         app:layout_constraintTop_toBottomOf="@id/ratingBar" />
 
     <TextView
@@ -181,12 +163,10 @@
         android:lineSpacingExtra="2sp"
         android:text="@string/story"
         android:textAppearance="@style/story"
-
         app:layout_constraintStart_toStartOf="@id/storyLine"
         app:layout_constraintTop_toBottomOf="@id/storyLine"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp"
-        />
+        android:layout_marginEnd="16dp" />
 
     <TextView
         android:id="@+id/cast"
@@ -196,7 +176,6 @@
         android:gravity="center_vertical"
         android:lineSpacingExtra="8sp"
         android:text="@string/cast"
-
         android:textAppearance="@style/cast"
         app:layout_constraintStart_toStartOf="@id/story"
         app:layout_constraintTop_toBottomOf="@id/story" />
@@ -210,7 +189,6 @@
         android:text="@string/robert_down"
         android:textAppearance="@style/name"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="@id/image_robert"
         app:layout_constraintStart_toStartOf="@id/image_robert"
         app:layout_constraintTop_toBottomOf="@id/image_robert" />
@@ -224,7 +202,6 @@
         android:text="@string/chris_evans"
         android:textAppearance="@style/name"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="@id/image_chris_evans"
         app:layout_constraintStart_toStartOf="@id/image_chris_evans"
         app:layout_constraintTop_toBottomOf="@id/image_chris_evans" />
@@ -238,7 +215,6 @@
         android:text="@string/mark_ruffalo"
         android:textAppearance="@style/name"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="@+id/image_mark_ruffalo"
         app:layout_constraintStart_toStartOf="@+id/image_mark_ruffalo"
         app:layout_constraintTop_toBottomOf="@+id/image_mark_ruffalo" />
@@ -252,7 +228,6 @@
         android:text="@string/chris_hemsw"
         android:textAppearance="@style/name"
         android:textStyle="bold"
-
         app:layout_constraintEnd_toEndOf="@+id/image_chris_hemsw"
         app:layout_constraintStart_toStartOf="@+id/image_chris_hemsw"
         app:layout_constraintTop_toBottomOf="@+id/image_chris_hemsw" />
@@ -267,12 +242,9 @@
         android:gravity="center_horizontal|center_vertical"
         android:lineSpacingExtra="2sp"
         android:text="@string/back"
-
-
         android:textAppearance="@style/back"
         app:layout_constraintBottom_toBottomOf="@id/back"
         app:layout_constraintStart_toEndOf="@id/back"
         app:layout_constraintTop_toTopOf="@id/back" />
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>
