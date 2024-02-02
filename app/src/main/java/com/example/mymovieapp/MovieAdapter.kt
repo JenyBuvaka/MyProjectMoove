@@ -1,5 +1,6 @@
 package com.example.mymovieapp
 
+import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -23,13 +24,14 @@ class MovieAdapter(private val clickListener: OnMovieClickListener) :
 
     //Заполняем элемент
     override fun onBindViewHolder(holder: MovieViewHolder, position: Int) {
+        val movie:MovieItem = movieList[position]
         holder.binding(movieList[position])
-        holder.fragment.findViewById<ImageView>(R.id.tooltip_image)
-            .setOnClickListener { clickListener.setOnClick(position) }
+        holder.itemView.setOnClickListener { clickListener.setOnClick(movie) }
     }
 
     class MovieViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val fragment = view.findViewById<ConstraintLayout>(R.id.movie)
+        val bundle = Bundle()
         fun binding(item: MovieItem) {
             fragment.findViewById<ImageView>(R.id.tooltip_image)
                 .setBackgroundResource(item.tooltipImage)

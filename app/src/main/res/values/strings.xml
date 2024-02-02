@@ -1,26 +1,33 @@
 <resources>
-    <string name="app_name">My Movie App</string>
-    <string name="some_id">13+</string>
+    <!--Generals-->
     <string name="review">REVIEWS</string>
+    <string name="app_name">My Movie App</string>
+    <string name="storyLine">Storyline</string>
+    <string name="cast">Cast</string>
+    <string name="back">Back</string>
+    <!--AVG Strings-->
+    <string name="some_id">13+</string>
     <string name="title_movie_details">Avengers:\nEnd Game</string>
     <string name="title_movie_AVG">Avengers:End Game</string>
-
     <string name="age_limit_movie_details">13+</string>
     <string name="genre_movie_details">Action, Adventure, Fantasy</string>
     <string name="rewiews">125 Reviews</string>
-    <string name="storyLine">Storyline</string>
-    <string name="story">After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.
-</string>
-    <string name="cast">Cast</string>
+    <string name="story">After the devastating events of Avengers: Infinity War, the universe is in ruins. With the help of remaining allies, the Avengers assemble once more in order to reverse Thanos\' actions and restore balance to the universe.</string>
     <string name="robert_down">Robert Downey Jr.</string>
     <string name="chris_evans">Chris Evans</string>
     <string name="mark_ruffalo">Mark Ruffalo</string>
     <string name="chris_hemsw">Chris Hemsworth</string>
-    <string name="back">Back</string>
     <string name="warszawa_po">Movies list</string>
     <string name="film_duration">137 min</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <!--widow strings-->
+    <string name="widow_app_name">My Movie App</string>
+    <string name="widow_some_id">16+</string>
+    <string name="widow_title_movie_details">Black Widow</string>
+    <string name="widow_age_limit_movie_details">16+</string>
+    <string name="widow_genre_movie_details">Action, Adventure, Sci-FI</string>
+    <string name="widow_rewiews">150 Reviews</string>
+    <string name="widow_story">Описание фильма WIDOW</string>
+    <string name="widow_film_duration">137 min</string>
 
 </resources>

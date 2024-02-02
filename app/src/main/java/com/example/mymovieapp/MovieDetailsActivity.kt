@@ -13,6 +13,9 @@ class MovieDetailsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.fragment_movie_details)
 
+        val receivedValue = intent.getStringExtra("title")
+
+
         val btnBack = findViewById<TextView>(R.id.back_tv)
         btnBack.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
@@ -21,6 +24,9 @@ class MovieDetailsActivity : AppCompatActivity() {
         btnBack2.setOnClickListener {
             onBackPressedDispatcher.onBackPressed()
         }
+        val title:TextView = findViewById(R.id.title)
+        title.text=receivedValue.toString()
+
 
     }
 }

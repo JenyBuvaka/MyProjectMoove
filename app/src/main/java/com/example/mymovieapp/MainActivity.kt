@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.mymovieapp.DataArr.Lists
 
 class MainActivity : AppCompatActivity() {
     private var spanCount: Int = 2
@@ -25,39 +26,16 @@ class MainActivity : AppCompatActivity() {
         recyclerView = findViewById(R.id.recycler_view)
         recyclerView.layoutManager = GridLayoutManager(this@MainActivity, spanCount)
 
-        val itemList: List<MovieItem> = listOf(
-            MovieItem(
-                imgAge = getString(R.string.age_limit_movie_details),
-                reviews = getString(R.string.rewiews),
-                genre = getString(R.string.genre_movie_details),
-                title = getString(R.string.title_movie_AVG),
-                filmDuration = getString(R.string.film_duration)
-            ),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(),
-            MovieItem(
-                imgAge = getString(R.string.age_limit_movie_details),
-                reviews = getString(R.string.rewiews),
-                genre = getString(R.string.genre_movie_details),
-                title = getString(R.string.title_movie_AVG),
-                filmDuration = getString(R.string.film_duration)
-            )
-        )
         adapter = MovieAdapter(object : OnMovieClickListener {
-            override fun setOnClick(position: Int) {
+            override fun setOnClick(movie: MovieItem) {
+
                 intent = Intent(this@MainActivity, MovieDetailsActivity::class.java)
+                intent.putExtra("title",movie.title)
                 startActivity(intent)
             }
         })
-
-        itemList.forEach { adapter.addMovie(it) }
+        val lists = Lists(this)
+        lists.itemList.forEach { adapter.addMovie(it) }
 
         recyclerView.adapter = adapter
     }
